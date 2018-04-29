@@ -47,6 +47,7 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
     <a href="{os_admin_url()}" class="mdi mdi-account mdi-48px" style="padding-left: 10px;"></a>
+    <a href="{os_home_url('register')}" class="mdi mdi-account-plus mdi-48px" style="padding-left: 10px;"></a>
     </div>
 </nav>
 </header>

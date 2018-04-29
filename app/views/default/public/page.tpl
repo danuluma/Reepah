@@ -24,7 +24,7 @@
                         <source src="{$system.home}/app/assets/music/john.mp3" type="audio/mpeg"></audio>
                     </div>
                     <div class="col-md-6"> 
-                        <i class="mdi mdi-music-note-whole mdi-24px" style="padding-left: 40px;"></i> <a href="{os_home_url('lyrics/23')}">Subtitles/Lyrics</a>
+                        <i class="mdi mdi-music-note-whole mdi-24px" style="padding-left: 40px;"></i> <a href="{os_home_url('lyrics/2')}">Subtitles/Lyrics</a>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@
         <div class="content-wrapper full-page-wrapper d-flex align-items-center auth-pages">
           <div class="card col-lg-4 mx-auto">
             <div class="card-body px-5 py-5">
-              <h3 class="card-title text-left mb-3">Create New Account</h3>
+              <center><a href="{os_home_url()}" class="card-title text-left mb-3"><img src="{$system.home}/app/assets/img/reepah.png" width="200px"></a></center>
               <form>
                 <div class="form-group">
                   <label>Name</label>

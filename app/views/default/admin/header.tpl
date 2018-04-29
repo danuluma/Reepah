@@ -252,7 +252,7 @@
             </li>
           </ul>
           <div class="wrapper upgrade-button">
-            <a href="{os_admin_url('settings')}" class="btn btn-lg btn-block purchase-button" style="bottom: 0px; position: relative;" >Settings</a>
+            <a href="{os_admin_url('settings')}" class="btn btn-lg btn-block purchase-button" style="bottom: 0px; position: relative;" >Profile Settings</a>
           </div>
         </nav>
         <!-- partial -->

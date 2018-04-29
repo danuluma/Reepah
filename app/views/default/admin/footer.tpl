@@ -9,7 +9,6 @@
   {os_scripts()}
 
         <!-- plugins:js -->
-        <script src="{$system.home}/app/assets/node_modules/jquery/dist/jquery.min.js"></script>
         <script src="{$system.home}/app/assets/node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="{$system.home}/app/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="{$system.home}/app/assets/node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>

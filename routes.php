@@ -2,6 +2,12 @@
 os_route( 'home', 'show_home', 'home' );
 os_route( 'login', 'os_login', 'login' );
 os_route('artist', 'profile', 'artist');
+os_route('lyrics', 'lyric', 'page');
+function lyric( $user = null)
+{
+	$users = new App\Data\Base('posts');
+	return $users-> single(['id' => $user]);
+}
 function profile( $user = null)
 {
 	$users = new App\Data\Base('users');
