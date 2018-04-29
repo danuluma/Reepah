@@ -1,2 +1,0 @@
-# Osen Framework
-osen
