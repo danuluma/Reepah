@@ -6,6 +6,31 @@ os_route( [ 'admin', 'users' ], 'show_home', 'users' );
 os_route( [ 'admin', 'destinations' ], 'show_home', 'destinations' );
 
 os_route( [ 'admin', 'settings'], 'os_admin_url', 'settings' );
+os_route( [ 'admin', 'videos'], 'os_admin_videos', 'videos' );
+os_route( [ 'admin', 'audio'], 'os_admin_audio', 'audio' );
+os_route( [ 'admin', 'images'], 'os_admin_images', 'images' );
+os_route( [ 'admin', 'create'], 'os_admin_videos', 'create' );
+
+function os_admin_videos(string $status = null)
+{
+	$video = new App\Data\Base( 'posts' );
+	$videos = $video -> fetch(  ); //[ 'status' => $status]
+	return array( 'status' => $status, 'videos' => $videos ); 
+}
+
+function os_admin_audio(string $status = null)
+{
+	$video = new App\Data\Base( 'posts' );
+	$videos = $video -> fetch(  ); //[ 'status' => $status]
+	return array( 'status' => $status, 'audio' => $videos ); 
+}
+
+function os_admin_images(string $status = null)
+{
+	$video = new App\Data\Base( 'posts' );
+	$videos = $video -> fetch(  ); //[ 'status' => $status]
+	return array( 'status' => $status, 'images' => $videos ); 
+}
 
 /**
  * ##################################################################

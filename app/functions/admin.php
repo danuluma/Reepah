@@ -15,7 +15,7 @@
 
 function os_admin_url( $path = '' )
 {
-	echo getenv( 'home' ).'/admin/'.$path;
+	echo getenv( 'home' ).'/admin/'.$path.'/';
 }
 
 /**

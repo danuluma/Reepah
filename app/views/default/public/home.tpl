@@ -19,6 +19,13 @@
             <a href="#" class="btn btn-outline-success">View</a>
           </div>
         </div>
+        <div class="carousel-item" style="height: 500px">
+          <img class="d-block w-100" src="https://placeimg.com/640/480/people?t=1524938697052" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block" style="top: 200px">
+            <h1>Media Title</h1>
+            <a href="#" class="btn btn-outline-success">View</a>
+          </div>
+        </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -41,11 +48,11 @@
         <a href="" class="btn btn-primary">VIEW ALL</a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people" alt="Card image cap">
           <a href="#" class="card-title"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/arch" alt="Card image cap">
           <a href="#" class="card-title"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
@@ -53,7 +60,7 @@
           <a href="#" class="card-title"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993014487" alt="Card image cap">
           <a href="#" class="card-title"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
@@ -111,27 +118,27 @@
         <a href="" class="btn btn-primary">VIEW ALL</a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993014487" alt="Card image cap">
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993065923" alt="Card image cap">
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993090209" alt="Card image cap">
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/nature" alt="Card image cap">
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/nature?t=1524993162704" alt="Card image cap">
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/nature?t=1524993177844" alt="Card image cap">
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
     </div>

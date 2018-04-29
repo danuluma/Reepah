@@ -8,7 +8,7 @@
   <meta name="author" content="">
   {os_meta()}
         <link rel="stylesheet" href="{$system.home}/app/assets/node_modules/mdi/css/materialdesignicons.min.css">
-        <link rel="stylesheet" href="{$system.home}/app/assets/node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.html">
+        <link rel="stylesheet" href="{$system.home}/app/assets/node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css">
         <!-- endinject -->
         <!-- plugin css for this page -->
         <link rel="stylesheet" href="{$system.home}/app/assets/node_modules/jquery-bar-rating/dist/themes/css-stars.html">
@@ -24,8 +24,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="{os_home_url()}"><img src="images/logo.svg" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="{os_home_url()}"><img src="images/logo-mini.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo text-center" href="{os_home_url()}"><center><i class="mdi mdi-shopping-music mdi-48px"></center></i></a>
+        <a class="navbar-brand brand-logo-mini" href="{os_home_url()}"><center><i class="mdi mdi-shopping-music mdi-32px"></center></i></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
         <div class="search-field ml-4 d-none d-md-block">
@@ -54,8 +54,8 @@
         </div>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item d-none d-lg-block full-screen-link">
-            <a class="nav-link">
-              <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+            <a class="nav-link" href="{os_admin_url('create')}">
+              <i class="mdi mdi-pencil" id="fullscreen-button"></i>
             </a>
           </li>
           <li class="nav-item dropdown">
@@ -160,7 +160,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle nav-profile" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <img src="images/faces/face1.jpg" alt="image">
+              <i class="mdi mdi-account mdi-24px"></i>
               <span class="d-none d-lg-inline">Daniel Russiel</span>
             </a>
             <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
@@ -193,21 +193,21 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="index-2.html">
+              <a class="nav-link" href="{os_admin_url()}">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                <span class="menu-title">Music</span>
+                <span class="menu-title">Audio</span>
                 <i class="menu-arrow"></i>
                 <i class="mdi mdi-lock menu-icon"></i>
               </a>
               <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="{os_admin_url('users/admin')}"> Admin </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="{os_admin_url('users/viewers')}"> Viewers </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{os_admin_url('audio/approved')}"> Approved </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{os_admin_url('audio/pending')}"> Pending </a></li>
                 </ul>
               </div>
             </li>
@@ -219,8 +219,21 @@
               </a>
               <div class="collapse" id="auth1">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="{os_admin_url('users/admin')}"> Admin </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="{os_admin_url('users/viewers')}"> Viewers </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{os_admin_url('videos/approved')}"> Approved </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{os_admin_url('videos/pending')}"> Pending </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#images" aria-expanded="false" aria-controls="auth">
+                <span class="menu-title">Images</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-lock menu-icon"></i>
+              </a>
+              <div class="collapse" id="images">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="{os_admin_url('images/approved')}"> Approved </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{os_admin_url('images/pending')}"> Pending </a></li>
                 </ul>
               </div>
             </li>
