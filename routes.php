@@ -5,6 +5,8 @@ os_route( [ 'admin', 'dashboard' ], 'show_home', 'dashboard' );
 os_route( [ 'admin', 'users' ], 'show_home', 'users' );
 os_route( [ 'admin', 'destinations' ], 'show_home', 'destinations' );
 
+os_route( [ 'admin', 'settings'], 'os_admin_url', 'settings' );
+
 /**
  * ##################################################################
  * ADD YOUR ROUTES HERE, IN THE FORM os_route( $route, $function, $args );

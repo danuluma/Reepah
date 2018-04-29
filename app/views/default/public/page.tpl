@@ -13,21 +13,17 @@
     {if $records.error}
         {include('404.tpl')}
     {else}
+        <title>{$records.title} - {$system.name}</title>
         <div class="row" style="padding-top: 30px;">
             <div class="col-md-6 card">
                 <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
             </div>
             <div class="col-md-6">
-                <h2>Media Title</h2>
-                <p>How it works
-                Here’s what you need to know before getting started with the navbar:
-
-                Navbars require a wrapping for responsive collapsing and color scheme classes.
-                Navbars and their contents are fluid by default. Use optional containers to limit their horizontal width.
-                Use our spacing and flex utility classes for controlling spacing and alignment within navbars.
-                Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.
-                Navbars are hidden by default when printing. Force them to be printed by adding .d-print to the .navbar. See the display utility class.
-                Ensure accessibility by using a <nav> element or, if using a more generic element such as a <div>, add a role="navigation" to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</p>
+                <h2>{$records.title}</h2>
+                {$records.details}
+                <br><br>
+                <p><i class="mdi mdi-phone mdi-24px"></i> <span>0705459494</span> </p>
+                <p><i class="mdi mdi-music-note-whole mdi-24px"></i> <a href="{os_home_url('lyrics/23')}">Subtitles/Lyrics</a> </p>
                 <audio controls=""></audio>
             </div>
         </div>
