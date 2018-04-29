@@ -1,4 +1,3 @@
-{os_style( 'kube.css', 'local' )}
 {include('header.tpl')}
 {include('nav.tpl')}
 	<title>Home - {$system.name}</title>
@@ -8,8 +7,8 @@
         <div class="carousel-item active" style="height: 500px">
           <img class="d-block w-100" src="https://placeimg.com/640/480/people" alt="First slide">
           <div class="carousel-caption d-none d-md-block" style="top: 200px">
-            <h1>Media Title</h1>
-            <a href="#" class="btn btn-outline-success">View Full</a>
+            <h1>Jana Usiku</h1>
+            <a href="{os_home_url('jana-usiku')}" class="btn btn-outline-success">View Full</a>
           </div>
         </div>
         <div class="carousel-item" style="height: 500px">
@@ -45,7 +44,7 @@
       </div>
       <div class="col-md-1">
         <br>
-        <a href="" class="btn btn-primary">VIEW ALL</a>
+        <a href="{os_home_url('trending')}" class="btn btn-primary">VIEW ALL</a>
       </div>
       <div class="col-md-2 card text-center">
         <img class="card-img-top" src="https://placeimg.com/640/480/people" alt="Card image cap">
@@ -64,11 +63,11 @@
           <a href="#" class="card-title"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993014487" alt="Card image cap">
           <a href="#" class="card-title"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993014487" alt="Card image cap">
           <a href="#" class="card-title"><b>Media Main title</b></a>
       </div>
     </div>
@@ -81,7 +80,7 @@
       </div>
       <div class="col-md-1">
         <br>
-        <a href="" class="btn btn-primary">VIEW ALL</a>
+        <a href="{os_home_url('recent')}" class="btn btn-primary">VIEW ALL</a>
       </div>
       <div class="col-md-2 card text-center">
         <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524938697052" alt="Card image cap">
@@ -92,30 +91,30 @@
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993014487" alt="Card image cap">
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993014487" alt="Card image cap">
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993014487" alt="Card image cap">
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
       <div class="col-md-2 card text-center">
-        <img class="card-img-top" src="images/faces/face1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993014487" alt="Card image cap">
           <a href="#" class="card-title" style="top: -40px; position: relative; color: lightgreen"><b>Media Main title</b></a>
       </div>
     </div>
     <div class="row">
       <div class="col-md-11">
         <br>
-        <h2>Top Coders</h2>
+        <h2>Top Artists</h2>
       </div>
       <div class="col-md-1">
         <br>
-        <a href="" class="btn btn-primary">VIEW ALL</a>
+        <a href="{os_home_url('top-artists')}" class="btn btn-primary">VIEW ALL</a>
       </div>
       <div class="col-md-2 card text-center">
         <img class="card-img-top" src="https://placeimg.com/640/480/people?t=1524993014487" alt="Card image cap">

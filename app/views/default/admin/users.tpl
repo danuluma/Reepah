@@ -5,50 +5,43 @@
         <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Users</h4>
+                  <h4 class="card-title">{capitalize $records.type}</h4>
                   <p class="card-description">
-                    Admin > <code>users</code>
+                   Users > <code>{$records.type}</code>
                   </p>
                   <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th>User</th>
-                        <th>Product</th>
-                        <th>Sale</th>
-                        <th>Status</th>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Joined</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Jacob</td>
-                        <td>Photoshop</td>
-                        <td class="text-danger"> 28.76% <i class="mdi mdi-arrow-down"></i></td>
-                        <td><label class="badge badge-danger">Pending</label></td>
-                      </tr>
-                      <tr>
-                        <td>Messsy</td>
-                        <td>Flash</td>
-                        <td class="text-danger"> 21.06% <i class="mdi mdi-arrow-down"></i></td>
-                        <td><label class="badge badge-warning">In progress</label></td>
-                      </tr>
-                      <tr>
-                        <td>John</td>
-                        <td>Premier</td>
-                        <td class="text-danger"> 35.00% <i class="mdi mdi-arrow-down"></i></td>
-                        <td><label class="badge badge-info">Fixed</label></td>
-                      </tr>
-                      <tr>
-                        <td>Peter</td>
-                        <td>After effects</td>
-                        <td class="text-success"> 82.00% <i class="mdi mdi-arrow-up"></i></td>
-                        <td><label class="badge badge-success">Completed</label></td>
-                      </tr>
-                      <tr>
-                        <td>Dave</td>
-                        <td>53275535</td>
-                        <td class="text-success"> 98.05% <i class="mdi mdi-arrow-up"></i></td>
-                        <td><label class="badge badge-warning">In progress</label></td>
-                      </tr>
+                    {if $records.users.error}
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-danger">No videos found</td>
+                            <td></td>
+                            <td> <i class="mdi mdi-pencil mdi-24px" style="color: red"></i></td>
+                        </tr>
+                      {else}
+                        {loop $records.users}
+                            <tr>
+                                <td>{$id}</td>
+                                <td>{$title}</td>
+                                <td>{$email}</td>
+                                <td>{$phone}</td>
+                                <td>{$created}</td>
+                                <td> <i class="mdi mdi-delete mdi-24px" style="color: red"></i></td>
+                            </tr>
+                        {/loop}
+                      {/if}
                     </tbody>
                   </table>
                 </div>

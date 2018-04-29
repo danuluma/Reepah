@@ -24,8 +24,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo text-center" href="{os_home_url()}"><center><i class="mdi mdi-shopping-music mdi-48px"></center></i></a>
-        <a class="navbar-brand brand-logo-mini" href="{os_home_url()}"><center><i class="mdi mdi-shopping-music mdi-32px"></center></i></a>
+        <a class="navbar-brand brand-logo text-center" href="{os_home_url()}"><img src="{$system.home}/app/assets/img/reepah.png" width="300px"></a>
+        <a class="navbar-brand brand-logo-mini" href="{os_home_url()}"><img src="{$system.home}/app/assets/img/reepah.png" width="300px"></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
         <div class="search-field ml-4 d-none d-md-block">
@@ -161,7 +161,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle nav-profile" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
               <i class="mdi mdi-account mdi-24px"></i>
-              <span class="d-none d-lg-inline">Daniel Russiel</span>
+              <span class="d-none d-lg-inline">Mauko Maunde</span>
             </a>
             <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
               <a class="dropdown-item" href="#">
@@ -176,7 +176,7 @@
             </div>
           </li>
           <li class="nav-item nav-logout d-none d-lg-block">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{os_home_url('logout')}">
               <i class="mdi mdi-power"></i>
             </a>
           </li>
@@ -202,7 +202,7 @@
               <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <span class="menu-title">Audio</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-lock menu-icon"></i>
+                <i class="mdi mdi-volume-high menu-icon"></i>
               </a>
               <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
@@ -215,7 +215,7 @@
               <a class="nav-link" data-toggle="collapse" href="#auth1" aria-expanded="false" aria-controls="auth">
                 <span class="menu-title">Videos</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-lock menu-icon"></i>
+                <i class="mdi mdi-video menu-icon"></i>
               </a>
               <div class="collapse" id="auth1">
                 <ul class="nav flex-column sub-menu">
@@ -228,7 +228,7 @@
               <a class="nav-link" data-toggle="collapse" href="#images" aria-expanded="false" aria-controls="auth">
                 <span class="menu-title">Images</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-lock menu-icon"></i>
+                <i class="mdi mdi-image menu-icon"></i>
               </a>
               <div class="collapse" id="images">
                 <ul class="nav flex-column sub-menu">
@@ -241,7 +241,7 @@
               <a class="nav-link" data-toggle="collapse" href="#auth2" aria-expanded="false" aria-controls="auth">
                 <span class="menu-title">Users</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-lock menu-icon"></i>
+                <i class="mdi mdi-account-multiple menu-icon"></i>
               </a>
               <div class="collapse" id="auth2">
                 <ul class="nav flex-column sub-menu">
@@ -252,7 +252,7 @@
             </li>
           </ul>
           <div class="wrapper upgrade-button">
-            <a href="{os_admin_url('settings')}" class="btn btn-lg btn-block purchase-button">Settings</a>
+            <a href="{os_admin_url('settings')}" class="btn btn-lg btn-block purchase-button" style="bottom: 0px; position: relative;" >Settings</a>
           </div>
         </nav>
         <!-- partial -->

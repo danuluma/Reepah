@@ -26,7 +26,7 @@
                 <div class="form-group">
                   <label>Type</label>
                   <select class="form-control p_input">
-                    <option>Admin</option>
+                    <option>Artist</option>
                     <option>Viewer</option>
                   </select>
                 </div>

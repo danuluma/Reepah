@@ -1,6 +1,6 @@
 <header>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="images/logo.svg" width="100px"></a>
+    <a class="navbar-brand" href="{os_home_url()}"><img src="{$system.home}/app/assets/img/reepah.png" width="200px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -46,6 +46,7 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+    <a href="{os_admin_url()}" class="mdi mdi-account mdi-48px" style="padding-left: 10px;"></a>
     </div>
 </nav>
 </header>

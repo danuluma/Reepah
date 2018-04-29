@@ -24,8 +24,9 @@
                           <label class="col-sm-3 col-form-label">Category</label>
                           <div class="col-sm-9">
                             <select class="form-control">
-                              <option>Male</option>
-                              <option>Female</option>
+                              <option>Audio</option>
+                              <option>Video</option>
+                              <option>Image</option>
                             </select>
                           </div>
                         </div>
@@ -34,9 +35,27 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Email Address</label>
+                          <label class="col-sm-3 col-form-label">Price</label>
                           <div class="col-sm-9">
-                            <input type="email" class="form-control" />
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">File</label>
+                          <div class="col-sm-9">
+                            <input type="file" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Tags(separate with comma)</label>
+                          <div class="col-sm-9">
+                            <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
                           </div>
                         </div>
                       </div>
@@ -44,9 +63,9 @@
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Genre</label>
                           <div class="col-sm-9">
-                            <select class="form-control">
-                              <option>Male</option>
-                              <option>Female</option>
+                            <select class="form-control" multiple>
+                              <option>Religious</option>
+                              <option>Traditional</option>
                             </select>
                           </div>
                         </div>
@@ -58,6 +77,17 @@
                           <div class="col-sm-12">
                            <label for="exampleTextarea1">Description</label>
                             <textarea class="form-control" id="exampleTextarea1" rows="10"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <div class="col-sm-12">
+                            <input type="submit" class="form-control btn btn-lg btn-primary" />
                           </div>
                         </div>
                       </div>

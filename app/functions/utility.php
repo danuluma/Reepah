@@ -41,7 +41,7 @@ function os_image( $image, $width = '100%', $height = '', $alt = 'Image', $class
 	if ( is_array( $image ) ) {
 		$path = getenv( 'home' ).'/app/assets/img/'.$image[0];
 	}
-	echo '<img src="'.$path.'" width="'.$width.'" height="'.$height.'" alt="'.$alt.'" class="'.$class.'">';
+	return '<img src="'.$path.'" width="'.$width.'" height="'.$height.'" alt="'.$alt.'" class="'.$class.'">';
 }
 
 function os_image_url( $image, $local = true )
